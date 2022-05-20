@@ -4,284 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>software developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <script src="loginjs.js"></script>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            
+            
+        }
+
+        .loginpage {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(221, 113, 51)), url(images/group-of-coders.jpg);
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+      
+        .logo {
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            transform: translate(-50%);
+            background: none;
+        }
+
+        .logo img {
+            width: 300px;
+            background: none;
+          
+        }
+
+        .formbox {
+            width: 300px;
+            padding: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: none;
+            text-align: center;
+
+        }
+
+        .formbox h1 {
+            color: white;
+            font-weight: 700;
+            background: none;
+            text-transform: uppercase;
+        }
+
+        .formbox input[type="text"], .formbox input[type="password"] {
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 3px solid blue;
+            padding: 14px 10px;
+            width: 220px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0, 25px;
+        }
+
+        .formbox input[type="text"]:focus, .formbox input[type="password"]:focus {
+            width: 250px;
+            border-color: orange;
+        }
+
+        .formbox input[type="text"]:hover, .formbox input[type="password"]:hover {
+            width: 250px;
+            border-color: white;
+        }
+        
+        .formbox input[type="submit"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 3px solid orange;
+            padding: 14px 10px;
+            width: 130px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0, 25px;
+            cursor: pointer;
+        }
+
+        .formbox input[type="submit"]:hover {
+            background: orange;
+        }
+
+
+
+
+
+
+    </style>
+
+
+
+
 </head>
-
 
 
 <body>
 
-<div class="header">
- <nav>
-        <img src="images/software-dev-logo.png" alt="logo" width="300px">
+    <div class="loginpage">
 
-        <ul>
-            <li> <a href="#" >Home</a></li>
-            <li> <a href="about.html">About</a></li>
-            <li> <a href="#">Contact us</a></li>
-            <li> <a href="groupmembers.html">Group members</a></li>
-            
-        </ul>
-
-        <div><a href="login.html">Logout</a></div>
-
-    </nav>
-<!-- for smaller screen -->
-   <div class="list">
-       <ul class="mobile">
-            <li> <a href="#" >Home</a></li>
-            <li> <a href="about.html">About</a></li>
-            <li> <a href="#">Contact us</a></li>
-            <li> <a href="#">Group members</a></li>
-        </ul>
-    </div> 
- <!-- for smaller screen -->
- 
- 
-
-    <div class="details">
-        
-         <h1>Software Developers Group</h1>
-         <br>
-         <p>This is a website designed by the software developers of Computer Science, SAF Polytechnic, Iseyin, Oyo State Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quod delectus unde corrupti modi cupiditate mollitia eaque hic nulla earum vitae tempora dolorem reiciendis dolor ullam voluptates tenetur, corporis iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum placeat neque sunt quod dolorum explicabo optio, mollitia doloribus reprehenderit itaque facere nostrum ab dolor inventore sequi repellendus? Fugiat, cum velit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nemo non temporibus saepe iure porro nulla tenetur et iusto eveniet, natus atque delectus. Modi error officia illum nemo quam vel?</p>
-       
-        <div class="aboutus-btn">
-            <a href="about.html">More Info</a>
+        <div class="logo">
+            <img src="images/software-dev-logo.png" alt="">
         </div>
+        
+        <form class="formbox" action="login.html" method="post">
+
+        <h1>SIGN IN</h1>
+
+        <input type="text" placeholder="Matric no, e.g 200753" id="matricno">
+        <input type="password" placeholder="Password" id="password">
+        <input type="submit" value="Login" onclick="validate()">
+
+
+        </form>
+
+
+
     </div>
-
-</div>
-    
-
-    <section id="first-section">
-        <div class="title">
-            <p>SAF</p>
-            <h1>Why SAF Polytechnic?</h1>
-        </div>
-<br>
-        <div class="why-saf">
-            <div class="why-saf-texts">
-                <h1>Convenient lecture rooms</h1>
-                <div class="why-saf-subtexts">
-                    <div class="why-saf-texts-icon">
-                        <i class="fa fa-check-square-o"></i>
-                    </div>
-                    <div class="why-saf-texts-subtexts">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quisquam dolores amet vel, quasi inventore enim minus earum? Adipisci ipsum culpa architecto at impedit laudantium minus aliquam. At, a corporis! </p>
-                    </div>
-                </div>
-<br>
-                <h1>Proficient lecturers</h1>
-                <div class="why-saf-subtexts">
-                    <div class="why-saf-texts-icon">
-                        <i class="fa fa-check-square-o"></i>
-                    </div>
-                    <div class="why-saf-texts-subtexts">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quisquam dolores amet vel, quasi inventore enim minus earum? Adipisci ipsum culpa architecto at impedit laudantium minus aliquam. At, a corporis! </p>
-                    </div>
-                </div>
-
-<br>
-
-                <h1>Proficient lecturers</h1>
-                <div class="why-saf-subtexts">
-                    <div class="why-saf-texts-icon">
-                        <i class="fa fa-check-square-o"></i>
-                    </div>
-                    <div class="why-saf-texts-subtexts">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quisquam dolores amet vel, quasi inventore enim minus earum? Adipisci ipsum culpa architecto at impedit laudantium minus aliquam. At, a corporis! </p>
-                    </div>
-                </div>
-<br>
-
-                <h1>Proficient lecturers</h1>
-                <div class="why-saf-subtexts">
-                    <div class="why-saf-texts-icon">
-                        <i class="fa fa-check-square-o"></i>
-                    </div>
-                    <div class="why-saf-texts-subtexts">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quisquam dolores amet vel, quasi inventore enim minus earum? Adipisci ipsum culpa architecto at impedit laudantium minus aliquam. At, a corporis! </p>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-
-            <div class="why-saf-img">
-                <img src="images/group-of-coders.jpg" height="450px", width="350px">
-            </div>
-
-
-        </div>
-
-        
-
-    </section>
-
-       
-
-
-
-    <section id="second-section">
-    
-
-        <div class="title2">
-            <p>THE DEPARTMENT</p>
-            <h1>Uniqueness of Computer Science Department</h1>
-        </div>
-        <br>
-        
-        <div class="wrap">
-            <div class="texts">
-               <h1> We are <span class="input"></span></h1>
-            </div>
-
-
-            <div class="image"><img src="images/group-of-coders-resized.jpg"> 
-            </div>
-
-        </div>
-
-        <script type="text/javascript" src="js/script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-        <script>
-            
-            var typed = new Typed(".input", {
-                strings: ["Software Developers.", "Computer Science.", "United.", "Brilliant.", "Unique."],
-                typeSpeed: 120,
-                backSpeed: 100,
-                loop: true
-            })
-
-        </script>
-
-
-
-
-
-    </section>
-
-
-
-
-
-
-    <section id="third-section">
-       
-        <div class="title3">
-            <p>OUR LECTURERS</p>
-            <h1>Meet Our Core Departmental lecturers</h1>
-        </div>
-        <br>
-        <div class="info">
-            <div class="details">
-                <div class="lec-name"><h1>Mr Ganiyu Azeez (HOD)</h1></div>
-                <div class="lec-det"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum eaque earum harum quasi voluptatibus ullam ipsa autem omnis culpa tempore. Eaque ut fuga totam quidem quibusdam itaque id impedit sunt?</p></div>
-            </div>
-
-
-            <div class="image"><img src="images/group-of-coders-resized.jpg" alt=""></div>
-
-
-
-        </div>
-
-
-
-
-        <div class="info2">
-
-            <div class="image"><img src="images/group-of-coders-resized.jpg" alt=""></div>
-            
-            <div class="details">
-                <div class="lec-name"><h1>Mr Alabi Muyideen (iShow)</h1></div>
-                <div class="lec-det"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum eaque earum harum quasi voluptatibus ullam ipsa autem omnis culpa tempore. Eaque ut fuga totam quidem quibusdam itaque id impedit sunt?</p></div>
-            </div>
-
-
-
-        </div>
-
-
-
-        <div class="info3">
-            <div class="details">
-                <div class="lec-name"><h1>Mr Ridwan</h1></div>
-                <div class="lec-det"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum eaque earum harum quasi voluptatibus ullam ipsa autem omnis culpa tempore. Eaque ut fuga totam quidem quibusdam itaque id impedit sunt?</p></div>
-            </div>
-
-
-            <div class="image"><img src="images/group-of-coders-resized.jpg" alt=""></div>
-
-
-
-        </div>
-    
-
-
-
-    </section>
-
-
-
-
-    <section id="footer">
-
-<div class="socialmedia">
-    <i class="fa fa-check-square-o"></i>
-    <i class="fa fa-check-square-o"></i>
-    <i class="fa fa-check-square-o"></i>
-    <i class="fa fa-check-square-o"></i>
-
-</div>
-
-
-<ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="#">Contact Us</a></li>
-    <li><a href="groupmembers.html">Group Members</a></li>
-</ul>
-
-<div class="copyright">Software Developers of SAF Polytechnic, Iseyin @ 2022</div>
-
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-   
-
-
-
-
-
-
-
-
-
-
 
 
 
