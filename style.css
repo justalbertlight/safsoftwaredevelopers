@@ -1,0 +1,825 @@
+*{
+margin: 0px;
+padding: 0px;
+
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.493), #046363), url(images/group-of-coders.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.header .mobile {
+    display: none;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header nav ul li {
+    display: inline-block;
+justify-content: space-around;
+margin: 0px 30px;
+
+}
+
+.header nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+
+.header nav div a{
+    padding: 10px 100px;
+    margin-right:50px ;
+    border: 1px solid orange;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.header nav div a:hover{
+    background-color: orange;
+}
+
+.header .details {
+margin-top: 100px;
+align-content: center;
+text-align: center;
+padding-top: 50px;
+}
+
+
+
+.header .details h1 {
+    color: orange;
+    font-size: 50px;
+    max-width: 900px;
+    margin: 0px auto;
+    font-family: 'Style Script', cursive;
+}
+
+.header .details p {
+    color: white;
+    max-width: 900px;
+    margin: 0px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.aboutus-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 15px 20px;
+    border: 1px solid orange;
+}
+
+.aboutus-btn:hover {
+    background-color: orange;
+    transition: 1s;
+}
+
+.aboutus-btn a {
+color: White;
+text-decoration: none;
+text-align: center;
+font-family: sans-serif;
+
+}
+
+
+
+
+/* ...........First Section's CSS for title1............. */
+
+
+#first-section {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+
+.why-saf-texts-icon .fa {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 10px;
+    color: #046363;
+    border: 1px solid #046363;
+    margin-right: 10px;
+}
+
+
+
+
+
+#first-section .title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#first-section .title p{
+    font-weight: bolder;
+    font-size: 18px;
+    color: #046363;
+}
+
+#first-section .title h1 {
+    font-size: 40px;
+}
+
+.why-saf {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.why-saf-texts {
+    flex-basis: 50%;
+    
+}
+
+.why-saf-img {
+    flex-basis: 50%;
+}
+
+.why-saf-img img {
+    border-radius: 10px;
+}
+
+.why-saf-texts h1 {
+    text-align: left;
+    font-weight: 100;
+    color: #046363;
+}
+
+.why-saf-subtexts {
+    display: flex;
+    align-items: center;
+}
+
+.why-saf-subtexts p {
+    text-align: justify;
+}
+
+
+
+
+
+
+/* ...........Second section's CSS for title2............. */
+
+#second-section {
+    padding: 50px 0px;
+    background-color: rgb(228, 228, 228);
+}
+
+#second-section .title2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+#second-section .title2 p{
+    font-weight: bolder;
+    font-size: 18px;
+    color: #046363;
+}
+
+#second-section .title2 h1 {
+    font-size: 40px;
+}
+
+#second-section .wrap {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#second-section .wrap .texts {
+    flex-basis: 50%;
+}
+
+#second-section .wrap .image {
+    flex-basis: 50%;
+}
+
+#second-section .wrap .texts h1 {
+    font-size: 50px;
+    
+}
+
+#second-section .wrap .texts span {
+    color: #046363;
+}
+
+
+
+
+
+
+
+
+
+/* ...........Third section's CSS for title3............. */
+
+
+
+#third-section {
+    padding: 50px 0px;
+}
+
+
+#third-section .title3 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#third-section .title3 p{
+    font-weight: bolder;
+    font-size: 18px;
+    color: #046363;
+}
+
+#third-section .title3 h1 {
+    font-size: 40px;
+}
+
+#third-section .info {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#third-section .info .details {
+    flex-basis: 50%;
+
+}
+
+#third-section .info .image {
+    flex-basis: 50%;
+}
+
+#third-section .info .image img {
+    /* width: 200px;
+    height: 200px; */
+    border-radius: 100px;
+
+}
+
+#third-section .info .details .lec-name {
+    text-align: left;
+    font-weight: 100;
+    color: #046363;
+}
+
+#third-section .info .details .lec-det {
+    text-align: justify;
+}
+
+
+
+
+#third-section .info2 {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#third-section .info2 .details {
+    flex-basis: 50%;
+    /* padding-right: 200px; */
+
+}
+
+#third-section .info2 .image {
+    flex-basis: 50%;
+    
+}
+
+#third-section .info2 .image img {
+    border-radius: 100px;
+
+}
+
+#third-section .info2 .details .lec-name {
+    text-align: right;
+    font-weight: 100;
+    color: #046363;
+}
+
+#third-section .info2 .details .lec-det {
+    text-align: right;
+}
+
+
+
+
+
+
+#third-section .info3 {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#third-section .info3 .details {
+    flex-basis: 50%;
+
+}
+
+#third-section .info3 .image {
+    flex-basis: 50%;
+}
+
+#third-section .info3 .image img {
+    /* width: 200px;
+    height: 200px; */
+    border-radius: 100px;
+
+}
+
+#third-section .info3 .details .lec-name {
+    text-align: left;
+    font-weight: 100;
+    color: #046363;
+}
+
+#third-section .info3 .details .lec-det {
+    text-align: justify;
+}
+
+
+
+
+
+/* ........... CSS for footer............. */
+
+
+#footer {
+    background-color: rgb(228, 228, 228);
+    padding: 50px 0px;
+}
+
+#footer .socialmedia .fa {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #046363;
+    text-align: center;
+    margin: 0px 20px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+#footer .socialmedia .fa:hover {
+    background-color: #046363;
+    opacity: 1;
+}
+
+.socialmedia {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+#footer ul li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+}
+#footer ul li a:hover {
+opacity: 1;
+font-size: 25px;
+color: #046363;
+}
+
+#footer ul {
+text-align: center;
+font-size: 20px;
+}
+
+#footer ul li {
+    display: inline-block;
+    margin: 0px 20px 30px 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 770px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    .header .mobile {
+        display: inline-block;
+    }
+    .header .mobile li {
+        display: inline-block;
+    }
+    .header .mobile li a{
+        text-decoration: none;
+        color: #fff;
+        font-family: sans-serif;
+        margin: 0px 20px;
+        font-size: 11px;
+    }
+    .header .list {
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 10px 0px;
+    }
+
+
+.header nav img {
+    padding-top: 10px;
+    width: 220px;
+}
+
+.header nav ul li {
+    display: none;
+}
+
+.header nav div a{
+    padding: 8px 50px;
+    margin-right:25px ;
+    border: 1px solid orange;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.header .details {
+    margin-top: 50px;
+    align-content: center;
+    text-align: center;
+    padding-top: 20px;
+    }
+    
+    
+    
+    .header .details h1 {
+        color: orange;
+        font-size: 35px;
+        max-width: 700px;
+        margin: 0px auto;
+        font-family: 'Style Script', cursive;
+    }
+    
+    .header .details p {
+        color: white;
+        max-width: 500px;
+        margin: 0px auto;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .aboutus-btn {
+        display: inline-block;
+        margin: 40px auto;
+        padding: 15px 20px;
+        border: 1px solid orange;
+    }
+
+
+
+    /* ------------First Section------- */
+
+
+    
+    #first-section .title p{
+        font-weight: bolder;
+        font-size: 13px;
+        color: #046363;
+    }
+    
+    #first-section .title h1 {
+        font-size: 25px;
+    }
+
+    .why-saf-texts {
+        flex-basis: 100%;
+        
+    }
+    
+    .why-saf-img {
+        margin-top: 20px;
+        flex-basis: 100%;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .why-saf-img img {
+        border-radius: 10px;
+        height: 400px;
+        width: 300px;
+    }
+    
+    .why-saf-texts h1 {
+        text-align: left;
+        font-weight: 100;
+        color: #046363;
+        font-size: 22px;
+    }
+    
+    .why-saf-subtexts {
+        display: flex;
+        align-items: center;
+    }
+    
+    .why-saf-subtexts p {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+
+
+
+/* ------------Second Section------- */
+
+#second-section .title2 p{
+    font-weight: bolder;
+    font-size: 13px;
+    color: #046363;
+}
+
+#second-section .title2 h1 {
+    font-size: 25px;
+}
+
+#second-section .wrap {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#second-section .wrap .texts {
+    flex-basis: 100%;
+}
+
+#second-section .wrap .image {
+    padding-top: 20px;
+    flex-basis: 100%;
+}
+
+#second-section .wrap .texts h1 {
+    font-size: 35px;
+    
+}
+
+
+/* ------------Third Section------- */
+
+#third-section .title3 p{
+    font-weight: bolder;
+    font-size: 13px;
+    color: #046363;
+}
+
+#third-section .title3 h1 {
+    font-size: 25px;
+}
+
+#third-section .info {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#third-section .info .details {
+    flex-basis: 100%;
+
+}
+
+#third-section .info .image {
+    padding-top: 10px;
+    flex-basis: 100%;
+}
+
+#third-section .info .image img {
+    /* width: 200px;
+    height: 200px; */
+    border-radius: 100px;
+
+}
+
+#third-section .info .details .lec-name {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 100;
+    color: #046363;
+}
+
+#third-section .info .details .lec-det {
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+
+
+#third-section .info2 {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#third-section .info2 .details {
+    flex-basis: 100%;
+    /* padding-right: 200px; */
+
+}
+
+#third-section .info2 .image {
+    padding-top: 100px;
+    flex-basis: 100%;
+    
+}
+
+#third-section .info2 .image img {
+    border-radius: 100px;
+
+}
+
+#third-section .info2 .details .lec-name {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 100;
+    color: #046363;
+}
+
+#third-section .info2 .details .lec-det {
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+
+
+
+
+#third-section .info3 {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#third-section .info3 .details {
+    flex-basis: 100%;
+
+}
+
+#third-section .info3 .image {
+    padding-top: 100px;
+    flex-basis: 100%;
+}
+
+#third-section .info3 .image img {
+   
+    border-radius: 100px;
+
+}
+
+#third-section .info3 .details .lec-name {
+    font-size: 14px;
+    padding-top: 100px;
+    text-align: left;
+    font-weight: 100;
+    color: #046363;
+}
+
+#third-section .info3 .details .lec-det {
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+
+
+
+/* ------------Footer------- */
+
+
+#footer {
+    background-color: rgb(228, 228, 228);
+    padding: 40px 0px;
+}
+
+#footer .socialmedia .fa {
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    line-height: 40px;
+    border-radius: 9px;
+    color: #fff;
+    border: 1px solid #046363;
+    text-align: center;
+    margin: 0px 17px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+
+
+#footer ul li a:hover {
+opacity: 1;
+font-size: 20px;
+color: #046363;
+}
+
+#footer ul {
+text-align: center;
+font-size: 17px;
+}
+
+#footer ul li {
+    display: inline-block;
+    margin: 0px 18px 25px 18px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+}
