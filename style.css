@@ -396,13 +396,15 @@ font-family: sans-serif;
     font-size: 20px;
     line-height: 50px;
     border-radius: 10px;
-    color: #fff;
+    color: orange;
     border: 1px solid #046363;
     text-align: center;
     margin: 0px 20px;
     opacity: 0.75;
     cursor: pointer;
 }
+
+
 #footer .socialmedia .fa:hover {
     background-color: #046363;
     opacity: 1;
@@ -416,7 +418,7 @@ font-family: sans-serif;
 
 #footer ul li a {
     text-decoration: none;
-    color: black;
+    color: #046363;
     opacity: 0.6;
 }
 #footer ul li a:hover {
@@ -478,7 +480,7 @@ font-size: 20px;
         color: #fff;
         font-family: sans-serif;
         margin: 0px 20px;
-        font-size: 11px;
+        font-size: 9px;
     }
     .header .list {
         background-color: rgba(0, 0, 0, 0.5);
@@ -489,7 +491,7 @@ font-size: 20px;
 
 .header nav img {
     padding-top: 10px;
-    width: 220px;
+    width: 200px;
 }
 
 .header nav ul li {
@@ -497,13 +499,13 @@ font-size: 20px;
 }
 
 .header nav div a{
-    padding: 8px 50px;
-    margin-right:25px ;
+    padding: 7px 45px;
+    margin-right:20px ;
     border: 1px solid orange;
     border-radius: 20px;
     color: white;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .header .details {
@@ -730,7 +732,7 @@ font-size: 20px;
     display: flex;
     width: 80%;
     margin: auto;
-    
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     justify-content: space-between;
@@ -742,7 +744,7 @@ font-size: 20px;
 }
 
 #third-section .info3 .image {
-    padding-top: 100px;
+    padding-top: 50px;
     flex-basis: 100%;
 }
 
@@ -783,7 +785,7 @@ font-size: 20px;
     font-size: 17px;
     line-height: 40px;
     border-radius: 9px;
-    color: #fff;
+    color: orange;
     border: 1px solid #046363;
     text-align: center;
     margin: 0px 17px;

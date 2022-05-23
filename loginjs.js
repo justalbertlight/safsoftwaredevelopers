@@ -13,8 +13,8 @@ function validate() {
         return false;
     }
 
-    else if (matricno=="200464" && password=="iyanu"){
-        alert("Welcome dear, Oyebiyi Iyanuoluwa Elizabeth");
+    else if (matricno=="guest" && password=="guest"){
+        alert("Welcome guest");
         window.open('home.html', 'homepage')
         window.open(url, 'homepage');
     }
