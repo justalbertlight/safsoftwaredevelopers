@@ -270,15 +270,16 @@ font-family: sans-serif;
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 #third-section .info .details {
-    flex-basis: 50%;
+    flex-basis: 70%;
 
 }
 
 #third-section .info .image {
-    flex-basis: 50%;
+    flex-basis: 30%;
 }
 
 #third-section .info .image img {
@@ -309,16 +310,17 @@ font-family: sans-serif;
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 #third-section .info2 .details {
-    flex-basis: 50%;
+    flex-basis: 70%;
     /* padding-right: 200px; */
 
 }
 
 #third-section .info2 .image {
-    flex-basis: 50%;
+    flex-basis: 30%;
     
 }
 
@@ -328,13 +330,13 @@ font-family: sans-serif;
 }
 
 #third-section .info2 .details .lec-name {
-    text-align: right;
+    text-align: left;
     font-weight: 100;
     color: #046363;
 }
 
 #third-section .info2 .details .lec-det {
-    text-align: right;
+    text-align: justify;
 }
 
 
@@ -353,12 +355,12 @@ font-family: sans-serif;
 }
 
 #third-section .info3 .details {
-    flex-basis: 50%;
+    flex-basis: 70%;
 
 }
 
 #third-section .info3 .image {
-    flex-basis: 50%;
+    flex-basis: 30%;
 }
 
 #third-section .info3 .image img {

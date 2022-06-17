@@ -25,6 +25,43 @@ function validate() {
         window.open(url, 'homepage');
     }
 
+    else if (matricno=="200046" && password=="paschal"){
+        alert("Welcome dear, Odife Paschal Ezekiel");
+        window.open('home.html', 'homepage')
+        window.open(url, 'homepage');
+    }
+
+    else if (matricno=="200690" && password=="marian"){
+        alert("Welcome dear, Ekeh Marian Gift");
+        window.open('home.html', 'homepage')
+        window.open(url, 'homepage');
+    }
+
+    else if (matricno=="200574" && password=="ruth"){
+        alert("Welcome dear, Babalola Ruth");
+        window.open('home.html', 'homepage')
+        window.open(url, 'homepage');
+    }
+
+    else if (matricno=="200232" && password=="segun"){
+        alert("Welcome dear, Akinyemi Oluwasegun");
+        window.open('home.html', 'homepage')
+        window.open(url, 'homepage');
+    }
+
+    else if (matricno=="200561" && password=="Fatimah"){
+        alert("Welcome dear, Adebowale Adetayo Fatimah");
+        window.open('home.html', 'homepage')
+        window.open(url, 'homepage');
+    }
+
+    else if (matricno=="200109" && password=="bolu"){
+        alert("Welcome dear, Ayanladun Boluwatife Faith");
+        window.open('home.html', 'homepage')
+        window.open(url, 'homepage');
+    }
+
+
 
 
 

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
 
     <style>
 
@@ -15,62 +16,89 @@
     font-family: sans-serif;
 }
 
+
+
+
+.header {
+height: 100%;
+background: radial-gradient(rgba(0, 0, 0, 0.5), #046363);
+}
+
+
 #wrapper {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #046363);
+    background: radial-gradient(rgba(0, 0, 0, 0.5), #046363);
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    padding-top: 50px;
     
 }
 .aboutus {
     background: rgba(0, 0, 0, 0.438);
     padding: 5px 100px;
     text-align: center;
-    width: 400px;
+    width: 350px;
     margin: 0px auto;
-    
+            
 }
+
+
 
 .aboutus h2 {
     color: #fff;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     justify-content: space-between;
     padding-top: 50px;
-    width: 80%;
+    width: 40%;
     align-items: center;
     margin: auto;
+    align-items: center;
     
 }
 
 .container .safpoly {
-    flex-basis: 25%;
+    
     background: white;
     padding: 40px;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 .container .comsci {
-    flex-basis: 25%;
+    
     padding: 40px;
     background: white;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 .container .softdev {
-    flex-basis: 25%;
+    
     padding: 40px;
     background: white;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 .container h2 {
 color: #046363;
+text-align: center;
 }
+
 .container p {
     text-align: justify;
+}
+
+.container .courses {
+    
+    padding: 40px;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 40px;
+    
 }
 
 
@@ -87,21 +115,29 @@ color: #046363;
     
 }
 
+.container {
+    
+    justify-content: space-between;
+    padding-top: 50px;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    align-items: center;
+    
+}
+
     
 
     .container .safpoly {
-    flex-basis: 100%;
     margin-bottom: 20px;
     
 }
 
 .container .comsci {
-    flex-basis: 100%;
     margin-bottom: 20px;
 }
 
 .container .softdev {
-    flex-basis: 100%;
     margin-bottom: 20px;
 }
 
@@ -133,24 +169,110 @@ color: #046363;
 
 <body>
 
+
+    <div class="header">
+        <nav>
+               <img src="images/software-dev-logo.png" alt="logo" width="300px">
+       
+               <ul>
+                   <li> <a href="home.html" >Home</a></li>
+                   <li> <a href="about.html">About-Us</a></li>
+                   <li> <a href="contactus.html">Contact us</a></li>
+                   <li> <a href="groupmembers.html">Developers</a></li>
+                   <li> <a href="news.html">News</a></li>
+               </ul>
+       
+               <div><a href="index.html">Logout</a></div>
+       
+        </nav>
+          <!-- for smaller screen -->
+            <div class="list">
+              <ul class="mobile">
+                   <li> <a href="#" >Home</a></li>
+                   <li> <a href="about.html">About-Us</a></li>
+                   <li> <a href="contactus.html">Contact us</a></li>
+                   <li> <a href="groupmembers.html">Developers</a></li>
+                   <li> <a href="news.html">News</a></li>
+               </ul>
+            </div> 
+          <!-- for smaller screen -->
+    </div>
+    <hr><hr>
+
 <section id="wrapper">
-<div class="aboutus"><h2>ABOUT US</h2></div>
+<div class="aboutus">
+   <div><h2>ABOUT US</h2></div> 
+</div>
 <div class="container">
 
     <div class="safpoly">
-        <h2>SAF Polytechnic</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, fugiat? Numquam rem doloremque excepturi commodi voluptatem iure, ab a nostrum quae cupiditate veritatis sed animi quod dicta possimus beatae necessitatibus!</p>
+        <h2>SAF POLYTECHNIC</h2> <br>
+        <p>SAF Polytechnic is an institution that inspires passion for knowledge, skills acquisition and character development for imaginative and innovative products development for societal, moral and economic growth. <br><br><hr><br> Her mission is to provide moral and high quality technological and entrepreneural educationto promote societal development. <br><br><hr><br> SAF Polytechnic is aimed to provide for students training skills in Applied SCience, Engineering and BUsiness studies with a view of meeting the present and future needs of the country in commerce, industry and the public service as well as career and personal needs of students. Also to provide qualitative education for students to enable them contribute to the technological, social and economic development of the country. </p>
     </div>
 
     <div class="comsci">
-        <h2>Computer Science Department</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi quia earum optio quis dicta deleniti quasi a aliquid ipsa quos porro, ratione voluptas! Aspernatur ipsam doloribus perspiciatis pariatur quia?</p>
+        <h2>COMPUTER SCIENCE DEPARTMENT</h2> <br>
+        <p>Computer Science department is one of the departments in SAF Polytechnic Iseyin. The objective of the department is to raise students who will be able to operate computer systems, use various computer packages e.g MS Word, MS Excel, CorelDraw etc, maintain hardware and solve simple hardware problems, use various programming languages: Visual BASIC (VB), JAVA, C programming, Unified Modeling Language (UML), HyperText Mark-up Language (HTML) , - use internet and set up network, set up and manage and enterprise. 
+          
+        
     </div>
 
+
     <div class="softdev">
-        <h2>Software Developers Group</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quae velit. Quod provident sequi sit. Odit quis quidem quaerat necessitatibus ex sed illum molestiae aliquid labore. Sequi consequatur saepe quae!</p>
+        <h2>SOFTWARE DEVELOPERS TEAM</h2> <br>
+        <p>Software Developers Group is a group of students who are zealous and passionate about the web technology, They are potential software engineers who are driven with passion to build the web</p>
     </div>
+
+
+    <div class="courses">
+        <h2>OUR CORE COURSES</h2> <br>
+    </p>
+
+    <h3>First Semester Courses</h3> <hr>
+    <ul>
+        <li>COM111 - Introduction to Computer</li>
+        <li>COM112 - Introduction to Digital Electronics</li>
+        <li>COM113 - Introduction to Programming</li>
+        <li>COM114 - Statistics for Compter I</li>
+        <li>COM115 - Computer Application Package I</li>
+    </ul>
+    <br>
+    <h3>Second Semester Courses</h3> <hr>
+    <ul>
+        <li>COM121 - Programming using C Language</li>
+        <li>COM122 - Introduction to Internet</li>
+        <li>COM123 - Programming using JAVA I</li>
+        <li>COM124 - Data Structure and Algorithm</li>
+        <li>COM125 - Introduction to Systems Analysis and Designs</li>
+        <li>COM126 - PC Upgrade and Maintenance</li>
+    </ul>
+    <br>
+    <h3>Third Semester Courses</h3> <hr>
+    <ul>
+        <li>COM211 - Programming using JAVA II</li>
+        <li>COM212 - Introduction Systems Programming</li>
+        <li>COM213 - Unified Modeling Language (UML)</li>
+        <li>COM214 - Computer Systems Troubleshooting</li>
+        <li>COM215 - Computer Application Packages II</li>
+        <li>COM216 - Statistics for Computer II</li>
+    </ul>
+    <br>
+    <h3>Fourth Semester Courses</h3> <hr>
+    <ul>
+        <li>COM221 - Basic Computer Networking</li>
+        <li>COM222 - Seminar on Computer and Society</li>
+        <li>COM223 - Basic Hardware Maintenance</li>
+        <li>COM224 - Management Information System</li>
+        <li>COM225 - Web Technology</li>
+        <li>COM226 - File Organization and Management</li>
+        <li>COM227 - Project</li>
+    </ul>
+        
+    </div>
+
+
+
+   
 
 </div>
 

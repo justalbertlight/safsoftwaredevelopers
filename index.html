@@ -4,107 +4,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Software Developers</title>
 
-    <script src="loginjs.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
 
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: sans-serif;
-            
-            
-        }
 
-        .loginpage {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(221, 113, 51)), url(images/group-of-coders.jpg);
-            width: 100%;
-            height: 100vh;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+*{
+margin: 0px;
+padding: 0px;
 
-      
-        .logo {
-            position: absolute;
-            left: 50%;
-            top: 10%;
-            transform: translate(-50%);
-            background: none;
-        }
+}
 
-        .logo img {
-            width: 300px;
-            background: none;
-          
-        }
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.493), #046363), url(images/group-of-coders.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
 
-        .formbox {
-            width: 300px;
-            padding: 30px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: none;
-            text-align: center;
+.header .mobile {
+    display: none;
+}
 
-        }
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header nav ul li {
+    display: inline-block;
+justify-content: space-around;
+margin: 0px 30px;
 
-        .formbox h1 {
-            color: white;
-            font-weight: 700;
-            background: none;
-            text-transform: uppercase;
-        }
+}
 
-        .formbox input[type="text"], .formbox input[type="password"] {
-            background: none;
-            display: block;
-            margin: 20px auto;
-            text-align: center;
-            border: 3px solid blue;
-            padding: 14px 10px;
-            width: 220px;
-            outline: none;
-            color: white;
-            border-radius: 24px;
-            transition: 0, 25px;
-        }
-
-        .formbox input[type="text"]:focus, .formbox input[type="password"]:focus {
-            width: 250px;
-            border-color: orange;
-        }
-
-        .formbox input[type="text"]:hover, .formbox input[type="password"]:hover {
-            width: 250px;
-            border-color: white;
-        }
-        
-        .formbox input[type="submit"] {
-            border: 0;
-            background: none;
-            display: block;
-            margin: 20px auto;
-            text-align: center;
-            border: 3px solid orange;
-            padding: 14px 10px;
-            width: 130px;
-            outline: none;
-            color: white;
-            border-radius: 24px;
-            transition: 0, 25px;
-            cursor: pointer;
-        }
-
-        .formbox input[type="submit"]:hover {
-            background: orange;
-        }
+.header nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
 
 
 
+.header nav div a{
+    padding: 10px 100px;
+    margin-right:50px ;
+    border: 1px solid orange;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.header nav div a:hover{
+    background-color: orange;
+}
+
+.header .details {
+margin-top: 100px;
+align-content: center;
+text-align: center;
+padding-top: 50px;
+}
+
+
+
+.header .details h1 {
+    color: orange;
+    font-size: 50px;
+    max-width: 900px;
+    margin: 0px auto;
+    font-family: 'Style Script', cursive;
+}
+
+.header .details p {
+    color: white;
+    max-width: 900px;
+    margin: 0px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.aboutus-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 15px 20px;
+    border: 1px solid orange;
+}
+
+.aboutus-btn:hover {
+    background-color: orange;
+    transition: 1s;
+}
+
+.aboutus-btn a {
+color: White;
+text-decoration: none;
+text-align: center;
+font-family: sans-serif;
+
+}
+
+
+@media screen and (max-width: 770px) {
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.header .mobile {
+    display: inline-block;
+}
+.header .mobile li {
+    display: inline-block;
+}
+.header .mobile li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0px 20px;
+    font-size: 9px;
+}
+.header .list {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+.header nav img {
+padding-top: 10px;
+width: 200px;
+}
+
+.header nav ul li {
+display: none;
+}
+
+.header nav div a{
+padding: 7px 45px;
+margin-right:20px ;
+border: 1px solid orange;
+border-radius: 20px;
+color: white;
+text-decoration: none;
+font-size: 10px;
+}
+
+.header .details {
+margin-top: 50px;
+align-content: center;
+text-align: center;
+padding-top: 20px;
+}
+
+
+
+.header .details h1 {
+    color: orange;
+    font-size: 35px;
+    max-width: 700px;
+    margin: 0px auto;
+    font-family: 'Style Script', cursive;
+}
+
+.header .details p {
+    color: white;
+    max-width: 500px;
+    margin: 0px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.aboutus-btn {
+    display: inline-block;
+    margin: 40px auto;
+    padding: 15px 20px;
+    border: 1px solid orange;
+}
+}
 
 
 
@@ -113,37 +198,56 @@
 
 
 
+
 </head>
 
 
+
 <body>
+    
 
-    <div class="loginpage">
-
-        <div class="logo">
-            <img src="images/software-dev-logo.png" alt="">
-        </div>
+    <div class="header">
+        <nav>
+               <img src="images/software-dev-logo.png" alt="logo" width="300px">
+       
+               <ul>
+                   <li> <a href="#" >Home</a></li>
+                   <li> <a href="loginfirst.html">About-Us</a></li>
+                   <li> <a href="loginfirst.html">Contact us</a></li>
+                   <li> <a href="loginfirst.html">Developers</a></li>
+                   <li> <a href="loginfirst.html">News</a></li>
+                   
+               </ul>
+       
+               <div><a href="login.html">Login</a></div>
+       
+           </nav>
+       <!-- for smaller screen -->
+          <div class="list">
+              <ul class="mobile">
+                   <li> <a href="#" >Home</a></li>
+                   <li> <a href="loginfirst.html">About</a></li>
+                   <li> <a href="loginfirst.html">Contact us</a></li>
+                   <li> <a href="loginfirst.html">Developers</a></li>
+                   <li> <a href="loginfirst.html">News</a></li>
+               </ul>
+           </div> 
+        <!-- for smaller screen -->
         
-        <form class="formbox" action="login.html" method="post">
-
-        <h1>SIGN IN</h1>
-
-        <input type="text" placeholder="Matric no, e.g 200753" id="matricno">
-        <input type="password" placeholder="Password" id="password">
-        <input type="submit" value="Login" onclick="validate()">
-
-
-        </form>
-
-
-
-    </div>
-
-
-
-
-
-
+        
+       
+           <div class="details">
+               
+                <h1>Computer Science Department</h1>
+                <br>
+                <p>This is a webpage designed by the Software Developers Group of NDII Computer Science Department, SAF Polytechnic, Iseyin, 2020/2021 set as the NDII first semester project. </p>
+              
+               <div class="aboutus-btn">
+                   <a href="loginfirst.html">More Info</a>
+               </div>
+           </div>
+       
+       </div>
 
 
 

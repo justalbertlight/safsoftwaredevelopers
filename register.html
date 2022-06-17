@@ -124,16 +124,14 @@
             <img src="images/software-dev-logo.png" alt="">
         </div>
         
-        <form class="formbox" action="login.html" method="post">
+        <form class="formbox" action="register.html" method="post">
 
-        <h1>SIGN IN</h1>
+        <h1>REGISTER</h1>
 
-        <input type="text" placeholder="Matric no, e.g 200753" id="matricno">
-        <input type="password" placeholder="Password" id="password">
-        <input type="submit" value="Login" onclick="validate()">
-
-
-         <h3>Not yet a member? <br><a href="register.html">REGISTER NOW</a></h3>
+        <input type="text" placeholder="Full name" id="regfullname">
+        <input type="text" placeholder="Matric no, e.g 200753" id="regmatricno">
+        <input type="password" placeholder="Password" id="regpassword">
+        <input type="submit" value="Register" onclick="validate()">
 
         </form>
 
@@ -142,7 +140,27 @@
 
     </div>
 
+<script>
+    function validate() {
+    var matricno=document.getElementById("regmatricno").value;
+    var password=document.getElementById("regpassword").value;
+    var password=document.getElementById("regfullname").value;
 
+    if (regfullname=="abcdefghijk" && regpassword=="abcdefghijk" && regmatricno == "abcdefghijk") {
+        window.open('home.html', 'homepage')
+        window.open(url, 'homepage')
+
+        return false;
+    }
+
+    else {
+        alert("Pls wait while we verify you eligible to register, This will take some time to verify, Please come back to login later");
+        window.open('login.html', 'login')
+        window.open(url, 'login')
+    }
+
+}
+</script>
 
 
 

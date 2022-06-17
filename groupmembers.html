@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group members</title>
-
+<link rel="stylesheet" href="style.css">
 
      <style>
 
@@ -15,8 +15,14 @@
             padding: 0px;
         }
 
+        .header {
+            height: 100%;
+            background: radial-gradient(rgba(0, 0, 0, 0.507), #046363);
+        }
+
         #body {
-            background: radial-gradient(rgba(0, 0, 0, 0.5), #046363);
+            background: radial-gradient(rgba(0, 0, 0, 0.507), #046363);
+            padding-top: 50px;
         }
 
 
@@ -24,19 +30,19 @@
             background: rgba(0, 0, 0, 0.438);
             padding: 5px 100px;
             text-align: center;
-            width: 400px;
+            width: 350px;
             margin: 0px auto;
             
         }
 
         .developers h2 {
-            color: #fff;
+            color: white;
         }
 
         .container {
             display: flex;
             align-items: center;
-            /* justify-content: space-around; */
+            
             margin: 50px;
             
         }
@@ -45,7 +51,7 @@
             margin: 0px 100px;
         }
 
-        img {
+        .image img {
             border-top-left-radius: 30px;
             border-bottom-right-radius: 30px;
             width: 200px;
@@ -74,7 +80,7 @@
             * {
             margin: 0px;
             padding: 0px;
-            /* background-color: rgb(34, 31, 33); */
+            
         }
 
         .container {
@@ -121,11 +127,41 @@
 
 
 <body>
+
+    <div class="header">
+        <nav>
+               <img src="images/software-dev-logo.png" alt="logo" width="300px">
+       
+               <ul>
+                   <li> <a href="home.html" >Home</a></li>
+                   <li> <a href="about.html">About-Us</a></li>
+                   <li> <a href="contactus.html">Contact us</a></li>
+                   <li> <a href="groupmembers.html">Developers</a></li>
+                   <li> <a href="news.html">News</a></li>
+               </ul>
+       
+               <div><a href="index.html">Logout</a></div>
+       
+        </nav>
+          <!-- for smaller screen -->
+            <div class="list">
+              <ul class="mobile">
+                   <li> <a href="#" >Home</a></li>
+                   <li> <a href="about.html">About-Us</a></li>
+                   <li> <a href="contactus.html">Contact us</a></li>
+                   <li> <a href="groupmembers.html">Developers</a></li>
+                   <li> <a href="news.html">News</a></li>
+               </ul>
+            </div> 
+          <!-- for smaller screen -->
+    </div>
+    <hr><hr>
+
 <section id="body">
     <div class="developers"><h2>DEVELOPERS</h2></div>
 
 
-    
+  <div class="display">
 <div class="container">
     <div class="image"> 
         <img src="images/paschal.jpg" >
@@ -151,16 +187,82 @@
     </div>
 
 </div>
+</div>  
 
 
 <div class="container">
     <div class="image"> 
-        <img src="images/light-empire-logo.png" >
+        <img src="images/albert.jpg" >
     </div>
 
     <div class="name"> 
         <h1>Ogunyemi Albert Anu</h1>
         <p>Matric No: 200753</p>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="image"> 
+        <img src="images/michael.jpg" >
+    </div>
+
+    <div class="name"> 
+        <h1>Ojebola Micheal Adeseun</h1>
+        <p>Matric No: 200693</p>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="image"> 
+        <img src="images/bolu.jpg" >
+    </div>
+
+    <div class="name"> 
+        <h1>Ayanladun Boluwatife Faith</h1>
+        <p>Matric No: 200109</p>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="image"> 
+        <img src="images/fatimah.jpg" >
+    </div>
+
+    <div class="name"> 
+        <h1>Adebowale Adetayo Fatimah</h1>
+        <p>Matric No: 200561</p>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="image"> 
+        <img src="images/marvelous.jpg" >
+    </div>
+
+    <div class="name"> 
+        <h1>Adeyanju Marvelous Boluwatife</h1>
+        <p>Matric No: 200274</p>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="image"> 
+        <img src="images/rokeeb.jpg" >
+    </div>
+
+    <div class="name"> 
+        <h1>Hassan Rokeeb Abiodun</h1>
+        <p>Matric No: 20B/CSC/0012</p>
     </div>
 
 </div>
@@ -185,7 +287,7 @@
     </div>
 
     <div class="name"> 
-        <h1>Bukola Ruth Ibukunoluwa</h1>
+        <h1>Babalola Ruth Ibukunoluwa</h1>
         <p>Matric No: 200574</p>
     </div>
 
@@ -204,18 +306,6 @@
 
 </div>
 
-
-<div class="container">
-    <div class="image"> 
-        <img src="images/fatimah.jpg" >
-    </div>
-
-    <div class="name"> 
-        <h1>Adebowale Adetayo Fatimah</h1>
-        <p>Matric No: 200561</p>
-    </div>
-
-</div>
 
 
 <div class="container">
@@ -270,30 +360,6 @@
 </div>
 
 
-<div class="container">
-    <div class="image"> 
-        <img src="images/michael.jpg" >
-    </div>
-
-    <div class="name"> 
-        <h1>Ojebola Micheal Adeseun</h1>
-        <p>Matric No: 200693</p>
-    </div>
-
-</div>
-
-
-<div class="container">
-    <div class="image"> 
-        <img src="images/marvelous.jpg" >
-    </div>
-
-    <div class="name"> 
-        <h1>Adeyanju Marvelous Boluwatife</h1>
-        <p>Matric No: 200274</p>
-    </div>
-
-</div>
 
 
 <div class="container">
@@ -423,18 +489,6 @@
 </div>
 
 
-<div class="container">
-    <div class="image"> 
-        <img src="images/rokeeb.jpg" >
-    </div>
-
-    <div class="name"> 
-        <h1>Hassan Rokeeb Abiodun</h1>
-        <p>Matric No: 20B/CSC/0012</p>
-    </div>
-
-</div>
-
 
 <div class="container">
     <div class="image"> 
@@ -455,7 +509,7 @@
     </div>
 
     <div class="name"> 
-        <h1>ogunjembola Esther Ayomide</h1>
+        <h1>Ogunjembola Esther Ayomide</h1>
         <p>Matric No: 20B/CSC/0001</p>
     </div>
 
@@ -468,7 +522,7 @@
     </div>
 
     <div class="name"> 
-        <h1>idowu Boluwatife vincent</h1>
+        <h1>Idowu Boluwatife Vincent</h1>
         <p>Matric No: 200489</p>
     </div>
 
@@ -487,16 +541,57 @@
 </div>
 
 
+<div class="container">
+    <div class="image"> 
+        <img src="images/nifemi.jpeg" >
+    </div>
+
+    <div class="name"> 
+        <h1>Babatunde Oluwanifemi Testimony</h1>
+        <p>Matric No: 200082</p>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="image"> 
+        <img src="images/azeez.jpg" >
+    </div>
+
+    <div class="name"> 
+        <h1>Ogunbanjo Azeez Ayomide</h1>
+        <p>Matric No: 200214</p>
+    </div>
+
+</div>
 
 
 
+<div class="container">
+    <div class="image"> 
+        <img src="images/wahab2.jpg" >
+    </div>
+
+    <div class="name"> 
+        <h1>Ajuwon Wahab Opeyemi</h1>
+        <p>Matric No: 200264</p>
+    </div>
+
+</div>
 
 
+<div class="container">
+    <div class="image"> 
+        <img src="images/wahab.jpg" >
+    </div>
 
+    <div class="name"> 
+        <h1>Oseni Abdulwahab Oluwatimileyin</h1>
+        <p>Matric No: 200494</p>
+    </div>
 
-
-
-
+</div>
 
 
 
